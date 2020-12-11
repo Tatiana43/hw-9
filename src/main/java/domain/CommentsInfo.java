@@ -3,11 +3,9 @@ package domain;
 public class CommentsInfo {
     private int count;
     private boolean canPost;
-    private String emojiUrl;
-    private boolean photoAttached;
-    private boolean videoAttached;
-    private boolean audioAttached;
-    private boolean fileAttached;
+    private boolean groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
 
     public int getCount() {
         return count;
@@ -25,43 +23,27 @@ public class CommentsInfo {
         this.canPost = canPost;
     }
 
-    public String getEmojiUrl() {
-        return emojiUrl;
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setEmojiUrl(String emojiUrl) {
-        this.emojiUrl = emojiUrl;
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public boolean isPhotoAttached() {
-        return photoAttached;
+    public boolean isCanClose() {
+        return canClose;
     }
 
-    public void setPhotoAttached(boolean photoAttached) {
-        this.photoAttached = photoAttached;
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
     }
 
-    public boolean isVideoAttached() {
-        return videoAttached;
+    public boolean isCanOpen() {
+        return canOpen;
     }
 
-    public void setVideoAttached(boolean videoAttached) {
-        this.videoAttached = videoAttached;
-    }
-
-    public boolean isAudioAttached() {
-        return audioAttached;
-    }
-
-    public void setAudioAttached(boolean audioAttached) {
-        this.audioAttached = audioAttached;
-    }
-
-    public boolean isFileAttached() {
-        return fileAttached;
-    }
-
-    public void setFileAttached(boolean fileAttached) {
-        this.fileAttached = fileAttached;
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }
